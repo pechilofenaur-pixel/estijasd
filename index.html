@@ -39,4 +39,5 @@
     <footer>        <p>&copy; 2026 Aircaribescol - Todos los derechos reservados.</p>        <p>Este sitio web utiliza fuentes verificadas de la UNESCO y organismos de patrimonio global.</p>    </footer></div>
 <script>    // Script para interactividad profesional    document.addEventListener('DOMContentLoaded', () => {        const cards = document.querySelectorAll('.wonder-card');                cards.forEach(card => {            card.addEventListener('mouseenter', () => {                card.style.borderColor = '#c5a059';            });            card.addEventListener('mouseleave', () => {                card.style.borderColor = '#333';            });        });
         // Navegación suave        document.querySelectorAll('a[href^="#"]').forEach(anchor => {            anchor.addEventListener('click', function (e) {                e.preventDefault();                document.querySelector(this.getAttribute('href')).scrollIntoView({                    behavior: 'smooth'                });            });        });    });</script>
+
 </body></html>
